@@ -1,0 +1,16 @@
+{
+  "name": "stubalubadubdub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongo-express": "^0.30.59",
+    "mongodb": "^2.1.21"
+  }
+}
