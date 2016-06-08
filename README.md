@@ -14,6 +14,6 @@ Navigate to `http://localhost:3000/mongoses` to view and modify the database.
 
 Navigate to `http://localhost:3000/:db_name/:collection_name` to return documents in the database as JSON.
 
-## Building
+## Modifying
 
 If you need an endpoint that does something more complicated - like read request headers - then go nuts. You can edit [app.js](stubalubadubdub/app.js) as per the [ExpressJS API reference](http://expressjs.com/en/api.html).
