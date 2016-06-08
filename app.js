@@ -1,13 +1,15 @@
-var express = require('express');
-var app = express();
-var MongoClient = require('mongodb').MongoClient;
+import express from 'express';
+import mongodb from 'mongodb';
+import mongo_express from 'mongo-express/lib/middleware';
+import mongo_express_config from './mongo.config.js';
 
-var mongo_express = require('mongo-express/lib/middleware');
-var mongo_express_config = require('./mongo.config.js');
+const app = express();
+const mongo = mongodb.MongoClient;
+
 app.use('/mongoses', mongo_express(mongo_express_config));
 
-app.get('/:db/:collection', function (req, res) {
-  MongoClient.connect('mongodb://localhost:27017/' + req.param('db'), function(err, db) {
+app.get('/:db/:collection', (req, res) => {
+  mongo.connect(`mongodb://localhost:27017/${req.param('db')}`, (err, db) => {
     db.collection(req.param('collection')).find().toArray(function(err, result) {
       res.json(result);
     });

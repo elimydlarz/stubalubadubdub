@@ -8,17 +8,7 @@ npm install
 
 ## Running
 
-Start the mongo server with:
-
-```
-mongod --dbpath db
-```
-
-Start Stub-a-lub-a-dub-dub:
-
-```
-node app.js
-```
+Start the mongo server with `npm run mongo`, then start Stub-a-lub-a-dub-dub with `npm start`.
 
 ## Using
 
