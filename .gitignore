@@ -1,4 +1,4 @@
 *.iml
 .idea
-db
 node_modules
+*.log
