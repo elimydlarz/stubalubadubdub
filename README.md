@@ -1,9 +1,9 @@
 # Stub-a-lub-a-dub-dub!
 
-## Installation
+## Installing
 
 ```
-npm install stubalubadubdub
+npm install
 ```
 
 ## Running
