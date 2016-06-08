@@ -1,9 +1,10 @@
 {
   "name": "stubalubadubdub",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A versatile server stubbing solution built with ExpressJS and MongoDB.",
-  "repository" : {
-    "type" : "git", "url" : "https://github.com/elimydlarz/stubalubadubdub.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elimydlarz/stubalubadubdub.git"
   },
   "main": "app.js",
   "scripts": {
