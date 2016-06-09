@@ -16,4 +16,26 @@ app.get('/:db/:collection', (req, res) => {
   });
 });
 
+app.get('/:db/:collection/header/:header', (req, res) => {
+  mongo.connect(`mongodb://localhost:27017/${req.params.db}`, (err, db) => {
+    let query = {};
+    query[req.params.header] = req.header(req.params.header);
+
+    db.collection(req.params.collection).find(query).toArray(function(err, result) {
+      res.json(result);
+    });
+  });
+});
+
+app.get('/:db/:collection/key/:key/value/:value', (req, res) => {
+  let query = {};
+  query[req.params.key] = req.header(req.params.value);
+
+  mongo.connect(`mongodb://localhost:27017/${req.params.db}`, (err, db) => {
+    db.collection(req.params.collection).find(query).toArray(function(err, result) {
+      res.json(result);
+    });
+  });
+});
+
 app.listen(3000);
