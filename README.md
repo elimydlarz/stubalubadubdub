@@ -15,6 +15,7 @@ npm run mongo
 ```
 
 Start Stub-a-lub-a-dub-dub:
+
 ```
 npm start
 ```
@@ -30,19 +31,19 @@ http://localhost:3000/mongoses
 Retrieve a collection of documents in the database:
 
 ```
-http://localhost:3000/:db_name/:collection_name
+http://localhost:3000/:collection_name
 ```
 
 Retrieve specific documents in the database based on your URL:
 
 ```
-http://localhost:3000/:db_name/:collection_name/key/:key/value/:value
+http://localhost:3000/:collection_name/key/:key/value/:value
 ```
 
 Retrieve specific documents in the database based on your URL and request headers, where the key and value of the header you have set match the key and value of the documents you are searching for:
 
 ```
-http://localhost:3000/:db_name/:collection_name/header/:header
+http://localhost:3000/:collection_name/header/:header_key
 ```
 
 ## Modifying
