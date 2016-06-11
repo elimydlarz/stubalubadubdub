@@ -2,6 +2,16 @@
 
 ## Installing
 
+You'll need to have Node and MongoDB already installed:
+
+```
+brew update
+brew install node
+brew install mongodb
+```
+
+Then you can install the apps NPM dependencies:
+
 ```
 npm install
 ```
